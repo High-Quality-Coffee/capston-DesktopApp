@@ -24,6 +24,7 @@
     "electron": "^33.2.0"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "electron-squirrel-startup": "^1.0.1",
     "express": "^4.21.1",
     "systeminformation": "^5.23.5"

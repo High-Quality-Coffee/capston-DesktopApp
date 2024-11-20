@@ -1,9 +1,10 @@
 async function fetchSystemInfo() {
     try {
+        //api request
         const response = await fetch('http://localhost:3000/api/system-info');
         const data = await response.json();
 
-        // 로컬 스토리지에 저장
+        // 데스크탑 앱 상의 로컬 스토리지에 저장
         localStorage.setItem('cpu', data.cpu);
         localStorage.setItem('gpu', data.gpu);
         localStorage.setItem('ram', data.ram);
